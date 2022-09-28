@@ -1,0 +1,219 @@
+.wrapper {
+    background: var(--common-black);
+}
+.container {
+    width: 1146px;
+    margin: auto;
+}
+.top {
+    color: var(--common-white);
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0 48px 0;
+}
+.top_left ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    grid-gap: 24px;
+}
+
+.top_left ul li {
+    position: relative;
+}
+.top_left ul li a {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 25px;
+    color: var(--common-white);
+}
+.top_left ul li:after {
+    position: absolute;
+    content: ' ';
+    top: 3px;
+    height: 16px;
+    width: 1px;
+    background: var(--common-white);
+    right: -12px;
+}
+.top_left ul li:last-child::after {
+    width: 0;
+}
+.top_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 25px;
+    grid-gap: 16px;
+}
+.top_tracking {
+    cursor: pointer;
+}
+.currency,
+.country {
+    background: transparent;
+    color: var(--common-white);
+    border: 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+.country:focus-visible,
+.currency:focus-visible {
+    outline: none !important;
+}
+
+/* search */
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 40px 0;
+    grid-gap: 4%;
+}
+.search_left {
+    flex: 0 0 100px;
+}
+.search_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 0 300px;
+}
+.search_middle {
+    position: relative;
+    flex: 1;
+}
+.search_middle input {
+    height: 50px;
+    background-color: var(--common-white);
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid;
+    padding: 0 42px;
+}
+.search_middle button:focus,
+.search_middle input:focus {
+    outline: none !important;
+}
+.search_middle img {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.search_middle button {
+    position: absolute;
+    background-color: var(--notification);
+    border: 1px solid var(--notification);
+    border-radius: 0 4px 4px 0;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--common-white);
+}
+
+.search_right_user {
+    color: var(--common-white);
+    display: flex;
+    grid-gap: 14px;
+    align-items: center;
+}
+.search_right_user h4 {
+    padding: 0 0 8px 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+.search_right_user h5 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.search_right_fav,
+.search_right_cart {
+    position: relative;
+}
+.search_right_fav span,
+.search_right_cart span {
+    position: absolute;
+    cursor: pointer;
+    top: -5px;
+    right: -12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--notification);
+    color: var(--common-white);
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* nav bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.navbar_left {
+    flex: 0 0 264px;
+    cursor: pointer;
+}
+.navbar_left_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--notification);
+    border-radius: 10px 10px 0 0;
+    padding: 17px 24px;
+    color: var(--common-white);
+    font-size: 14px;
+}
+.navbar_middle {
+    flex: 1;
+}
+.navbar_middle ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 50px;
+}
+.navbar_middle ul li {
+    font-size: 14px;
+    color: var(--common-white);
+    padding: 10px 20px 17px 20px;
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+    cursor: pointer;
+}
+.navbar_right {
+    flex: 0 0 189px;
+    color: var(--icon-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+    top: -6px;
+}
+.navbar_right_weekend {
+    cursor: pointer;
+}
+.navbar_right_weekend h4 {
+    color: var(--notification);
+    margin: 4px 0 0 0;
+    font-size: 16px;
+}
+.navbar_right_arrow {
+    cursor: pointer;
+}

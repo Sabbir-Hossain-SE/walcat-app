@@ -1,0 +1,118 @@
+.wrapper {
+    padding: 32px 0 0 0;
+}
+.container {
+    padding: 0 2rem;
+}
+.menu_slider {
+    display: flex;
+    grid-gap: 30px;
+}
+.menu {
+    flex: 0 0 264px;
+}
+.menu ul {
+    list-style: none;
+    border-radius: 8px;
+    background: var(--common-white);
+}
+.menu ul li {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 12px 16px 19px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    position: relative;
+    color: var(--text-primary);
+}
+
+.menu ul li .menu_item {
+    display: flex;
+    align-items: center;
+    grid-gap: 14px;
+}
+.menu ul li:last-child {
+    border-bottom: 0;
+}
+/* 1st drop down  */
+.menu_first_ul {
+    position: absolute;
+    opacity: 0;
+    z-index: -999;
+    left: 242px;
+    top: 0;
+    width: 100%;
+    max-width: 242px;
+    background: var(--common-white) !important;
+    border-radius: 0px 8px 8px 0 !important;
+}
+.menu ul li:hover {
+    background: var(--active-primary);
+}
+.menu ul li.menu_ul_li:hover .menu_first_ul {
+    opacity: 1;
+    z-index: 1;
+}
+.menu ul li.menu_ul_li:first-child:hover {
+    border-radius: 8px 8px 0 0;
+}
+.menu ul li.menu_ul_li:last-child:hover {
+    border-radius: 0 0 8px 8px;
+}
+.menu_first_ul .menu_first_ul_li {
+    position: relative;
+}
+.menu_first_ul .menu_first_ul_li:first-child:hover {
+    border-radius: 0 8px 0 0;
+}
+.menu_first_ul .menu_first_ul_li:last-child:hover {
+    border-radius: 0 0 8px 0;
+}
+
+/* 2nd drop down */
+.menu_2dn_ul {
+    position: absolute;
+    opacity: 0;
+    z-index: -999;
+    left: 242px;
+    top: 0;
+    width: 100%;
+    max-width: 242px;
+    background: var(--common-white) !important;
+    border-radius: 0px 8px 8px 0 !important;
+}
+.menu_first_ul .menu_first_ul_li:hover .menu_2dn_ul {
+    opacity: 1;
+    z-index: 1;
+}
+.menu_2dn_ul .menu_2nd_ul_li:first-child:hover {
+    border-radius: 0 8px 0 0;
+}
+.menu_2dn_ul .menu_2nd_ul_li:last-child:hover {
+    border-radius: 0 0 8px 0;
+}
+
+.slider {
+    flex: 1;
+    height: auto;
+    width: calc(100% - 294px);
+}
+
+.slider_Wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.slider_left_img_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    height: 246px;
+}
+
+.slider_img {
+    /* background-image: url('../public/assets/images/image-4.png'); */
+}
